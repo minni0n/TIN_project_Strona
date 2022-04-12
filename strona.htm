@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MWPZ - Mistrzostwa Wielkopolski w Programowaniu Zespolowym</title>
+	<style>
+		body {
+		margin: 0 auto;
+	    background: #FFF;
+	    font-family: verdana, arial, sans-serif;
+	    font-size: 0.83em;
+	    color: #000;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+	   .header {
+		position: relative;
+		height: 140px;
+		margin: 0 auto;
+		max-width: 54em;
+	   }
+
+	   .toplogo {
+		float: left;
+	    margin: 15px 0 0 20px;
+	}
+	   .container {
+	   	width: 100%;
+	    overflow: hidden;
+	   }
+
+	   .hh {
+			margin: 0;
+			padding: 0;
+			background: #FFF url(http://www.mwpz.poznan.pl/images/header_shadow.png) repeat-x bottom left;
+	   }
+
+	   .navigation {
+		padding: 1px 0 21px 0;
+		background: #FFF url(http://www.mwpz.poznan.pl/images/nav_shadow.png) repeat-x bottom left;
+	   }
+
+	   .navtop {
+		background: #9a9a9a;
+	   }
+
+	   .subnav {
+		border-top: 1px solid #ffffff;
+	    background: #9a9a9a;
+
+	   }
+
+	   .ultop {
+		list-style-type: none;
+	    display: block;
+	    overflow: hidden;
+	    background: url(http://www.mwpz.poznan.pl/images/nav_separator_white.png) no-repeat top left;
+		margin: 0 auto;
+		max-width: 54em;
+		vertical-align: middle;
+	   }
+
+	   .ul {
+		list-style-type: none;
+	    display: block;
+	    overflow: hidden;
+	    background: url(http://www.mwpz.poznan.pl/images/nav_separator_white.png) no-repeat top left;
+		margin: 0 auto;
+		max-width: 54em;
+		vertical-align: middle;
+		height:23.94px;
+	   }
+
+	   .li {
+		float: left;
+	    padding: 0 2px 0 1px;
+		background: url(http://www.mwpz.poznan.pl/images/nav_separator_white.png) no-repeat top right;
+	   }
+
+	   .but {
+		color: white;
+	    text-decoration: none;
+	    font-size: 110%;
+	    padding: 0.5em 1em 0.3em 1em;
+	    display: block;
+	    border-bottom: 3px solid #9a9a9a;
+	    transition: all 300ms;
+	   }
+
+	   .but1 {
+	   	color: #FFF;
+	    text-decoration: none;
+	    padding: 0.3em 1em;
+	    display: block;
+	   }
+
+	   .content {
+		padding: 0 1em 3em 1em;
+	    margin: 1px auto auto auto;
+	    color: #555555;
+	    max-width: 68em;
+	   }
+
+	   .h2 {
+		color: #444;
+		font-weight: normal;
+		padding: 0 0 0 20px;
+		background: url(http://www.mwpz.poznan.pl/images/h2_bullet2.png) no-repeat center left;
+		font-size: 200%;
+		margin: 1.2em 0 0.5em 0;
+	   }
+
+	.p {
+		text-align: justify;
+		margin-bottom: 0.5em;
+	    line-height: 130%;
+	    display: block;    
+	}
+
+	.a {
+		color: #e7302c;
+		text-decoration: none;
+	}
+
+	.navigate {
+		text-align: center;
+		margin: 1.5em 0;
+		line-height: 130%;
+	}
+
+	p.title:before {
+	    content: "\201E";
+	}
+
+	.title {
+		text-align: center;
+		font-family: Times;
+		font-style: italic;
+		font-size: 200%;
+		margin: 1em 0 1em 0;
+		line-height: 130%;
+	}
+
+	p.title:after {
+	    content: "\201D";
+	}
+
+	.author {
+		float: right;
+		font-size: 85%;
+		margin-bottom: 0.5em;
+    	line-height: 130%;
+    	text-align: justify;
+	}
+
+	.footer {
+		padding: 10px 1em 0 1em;
+		overflow: auto;
+		color: #999;
+		margin: 0 auto;
+		max-width: 54em;
+	}
+
+	.contact {
+		float: left;
+		font-size: 85%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mail {
+		color: #444;
+		text-decoration: none;
+	}
+
+	.design {
+		float: right;
+		font-size: 85%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.tutorial {
+		margin: 0;
+	    padding: 0;
+	}
+
+	.logoa {
+		color: #e7302c;
+	    text-decoration: none;
+	}
+
+	.sheets {
+		width: 352px;
+	    height: 261px;
+	    position: absolute;
+	    right: -230px;
+	    background: url(http://www.mwpz.poznan.pl/images/sheets.png) no-repeat left top;
+	    z-index: 3;
+	}
+
+	.br {
+	margin: 0;
+    padding: 0;
+	}
+
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="hh">
+			<div class="header">
+				<div class="sheets"></div>
+				<div class="logoW">
+					<a href="" class="logoa">	
+						<img src="http://www.mwpz.poznan.pl/images/XIIedycjaMWPZ.png" alt="Logo XII MWPZ" class="toplogo" height="126">
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="navigation">
+			<div class="navtop">
+				<ul class="ultop">
+					<li class="li">
+						<a href="" class="but">Home</a>
+					</li>
+					<li class="li">
+						<a href="" class="but">Ranking</a>
+					</li>
+					<li class="li">
+						<a href="" class="but">Sponsorzy</a>
+					</li>
+					<li class="li">
+						<a href="" class="but">Regulamin</a>
+					</li>
+					<li class="li">
+						<a href="" class="but">Tutorial</a>
+					</li>
+				</ul>
+			</div>
+			<div class="subnav">
+				<ul class="ul">
+					<li class="li">
+						<a href="" class="but1">Historia</a>
+					</li>
+					<li class="li">
+						<a href="" class="but1">Organizatorzy i kontakt</a>
+					</li>
+					<li class="li">
+						<a href="" class="but1">PROWOC</a>
+					</li>
+					<li class="li">
+						<a href="" class="but1">Linki</a>
+					</li>
+					<li class="li">
+						<a href="" class="but1"><img src="http://www.mwpz.poznan.pl/images/en2.png" height="15" width="25" alt="English version"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<h2 class="h2">Tutorial</h2>
+			<div class="tutorial">
+
+﻿
+
+				<p class="p">Witamy wszystkich na krótkim tutorialu pod tytułem:</p>
+				<p class="title">Jak rozwiązywać zadania?</p>
+				<p class="p">Przed rozpoczęciem zachęcamy gorąco do zapoznania się z <a href="" class="a">regulaminem Mistrzostw</a>. Niniejszy tutorial jest uzupełnieniem wiadomości tam zawartych i przedstawia je w sposób nieco bardziej zrozumiały.</p>
+				<p class="navigate"><a href="" class="a">Kliknij tutaj jeśli piszesz w Pascalu</a></p>
+				<p class="navigate"><a href="" class="a">Kliknij tutaj jeśli piszesz w C/C++</a></p>
+				<br class="br">
+				<p class="author">Autor: Rafal Witkowski (UAM)</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="contact">
+				
+			kontakt 
+			<a href="mailto:zawody@mwpz.poznan.pl" class="mail">zawody@mwpz.poznan.pl</a>
+			</div>
+			<div class="design">
+			design <a class="mail" href="http://www.vorg.pl" onclick="window.open(this.href); return false;">vorg</a>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
